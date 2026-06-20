@@ -1,0 +1,62 @@
+/* ── ANIMATIONS ───────────────────────────────────────────── */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.5s ease both;
+}
+
+/* Stagger sections slightly so they don't all pop at once */
+.hero.fade-in {
+  animation-delay: 0s;
+}
+
+.section.fade-in:nth-of-type(1) { animation-delay: 0.05s; }
+.section.fade-in:nth-of-type(2) { animation-delay: 0.1s; }
+.section.fade-in:nth-of-type(3) { animation-delay: 0.15s; }
+.section.fade-in:nth-of-type(4) { animation-delay: 0.2s; }
+.section.fade-in:nth-of-type(5) { animation-delay: 0.25s; }
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Project card lift on hover (subtle, complements components.css) */
+.project-card {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  transform: translateY(-2px);
+}
+
+/* Toast slide-in (used by form.js success/error messages) */
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast {
+  animation: toastIn 0.25s ease both;
+}

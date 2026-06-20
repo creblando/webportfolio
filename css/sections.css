@@ -1,0 +1,18 @@
+/* ── SECTION-SPECIFIC STYLES ─────────────────────────────── */
+
+/* About — no overrides needed, uses shared .body-text */
+
+/* Stack filter row alignment */
+#stack .section__head {
+  align-items: flex-start;
+}
+
+/* Projects grid spacing */
+#projects .projects-grid {
+  margin-top: 0;
+}
+
+/* Contact spacing */
+#contact .contact-form {
+  margin-top: 0;
+}
