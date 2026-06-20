@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chezter Reblando</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__name">Chezter Reblando</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about"    class="nav__link" data-section="about">About</a></li>
+        <li><a href="#stack"    class="nav__link" data-section="stack">Stack</a></li>
+        <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+        <li><a href="#certs"    class="nav__link" data-section="certs">Certifications</a></li>
+        <li><a href="#contact"  class="nav__link" data-section="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <div class="page" id="home">
+    <header class="hero fade-in">
+      <div class="hero__top">
+        <div class="hero__left">
+          <p class="hero__eyebrow">Available for internships</p>
+          <h1 class="hero__name">Chezter Lei Christian V. Reblando</h1>
+          <p class="hero__role">CS Student &nbsp;·&nbsp; Polytechnic University of the Philippines</p>
+          <p class="hero__intro">Third-year Computer Science student building software across the full stack. I mostly work with React, Node.js, and C# .NET to build apps from the ground up. Based in Marikina City, Philippines.</p>
+        </div>
+       <div class="hero__right">
+          <div class="avatar" id="avatar">
+            <img src = "assets/image.png">
+          </div>
+            <div class="hero__status">
+  
+          </div> 
+        </div>
+      </div>
+      <div class="hero__links">
+        <a href="mailto:clc.reblando@gmail.com"        class="hero-link">✉ clc.reblando@gmail.com</a>
+        <a href="https://github.com/creblando"          class="hero-link" target="_blank" rel="noopener">⌨ github.com/creblando</a>
+        <a href="https://linkedin.com/in/creblando"     class="hero-link" target="_blank" rel="noopener">🔗 linkedin.com/in/creblando</a>
+        <a href="tel:+639685937091"                     class="hero-link"><svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path opacity="0.4" fill="rgb(0, 0, 0)" d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/></svg> +63 968 593 7091</a>
+      </div>
+    </header>
+
+    <!-- ── MAIN GRID ─────────────────────────────────────── -->
+    <div class="main-grid">
+
+      <!-- ── LEFT COLUMN ──────────────────────────────────── -->
+      <main class="main-left">
+
+        <!-- ABOUT -->
+        <section class="section fade-in" id="about">
+          <div class="section__head">
+            <span class="section__title">About</span>
+          </div>
+          <p class="body-text">I'm a third-year BSCS student at the Polytechnic University of the Philippines Manila, passionate about software engineering and full-stack web development. I like building things from scratch from frontends with React or setting up the backend logic with Node.js and C# .NET.</p>
+          <p class="body-text">Goal: land a solid software engineering internship and keep building cool stuff along the way.</p>
+        </section>
+
+        <!-- TECH STACK -->
+        <section class="section fade-in" id="stack">
+          <div class="section__head">
+            <span class="section__title">Tech Stack</span>
+            <div class="stack-filter" id="stack-filter">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="languages">Languages</button>
+              <button class="filter-btn" data-filter="frontend">Frontend</button>
+              <button class="filter-btn" data-filter="backend">Backend</button>
+              <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+          </div>
+
+          <div class="stack-groups" id="stack-groups">
+            <div class="stack-group" data-category="languages">
+              <div class="stack-label">Languages</div>
+              <div class="pills">
+                <span class="pill">Python</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">C#</span>
+                <span class="pill">Java</span>
+                <span class="pill">SQL</span>
+                <span class="pill">C</span>
+                <span class="pill">Dart</span>
+              </div>
+            </div>
+            <div class="stack-group" data-category="frontend">
+              <div class="stack-label">Frontend</div>
+              <div class="pills">
+                <span class="pill">React.js</span>
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">Tailwind CSS</span>
+                <span class="pill">Flutter</span>
+              </div>
+            </div>
+            <div class="stack-group" data-category="backend">
+              <div class="stack-label">Backend</div>
+              <div class="pills">
+                <span class="pill">Node.js</span>
+                <span class="pill">Express.js</span>
+                <span class="pill">PHP</span>
+                <span class="pill">ASP.NET MVC</span>
+                <span class="pill">REST APIs</span>
+                <span class="pill">Flask</span>
+                <span class="pill">TensorFlow</span>
+                <span class="pill">Keras</span>
+              </div>
+            </div>
+            <div class="stack-group" data-category="tools">
+              <div class="stack-label">Tools &amp; Platforms</div>
+              <div class="pills">
+                <span class="pill">Git</span>
+                <span class="pill">GitHub</span>
+                <span class="pill">Firebase</span>
+                <span class="pill">VS Code</span>
+              </div>
+            </div>
+            <div class="stack-group" data-category="tools">
+              <div class="stack-label">Soft Skills</div>
+              <div class="pills">
+                <span class="pill">Problem Solving</span>
+                <span class="pill">Communication</span>
+                <span class="pill">Teamwork</span>
+                <span class="pill">Time Management</span>
+                <span class="pill">Logical Thinking</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section fade-in" id="projects">
+          <div class="section__head">
+            <span class="section__title">Projects</span>
+          </div>
+          <div class="projects-grid" id="projects-grid">
+
+            <article class="project-card" data-project="taskpay" tabindex="0" role="button" aria-label="Open TaskPay details">
+              <div class="project-card__inner">
+                <div class="project-card__header">
+                  <span class="project-card__name">TaskPay</span>
+                  <span class="project-card__arrow">↗</span>
+                </div>
+                <p class="project-card__desc">Local task marketplace platform for flexible community earning</p>
+                <div class="project-card__meta">
+                  <span class="project-card__tag">React.js · Tailwind CSS</span>
+                  <span class="project-card__role">Frontend</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="ayospila" tabindex="0" role="button" aria-label="Open AyosPila details">
+              <div class="project-card__inner">
+                <div class="project-card__header">
+                  <span class="project-card__name">AyosPila</span>
+                  <span class="project-card__arrow">↗</span>
+                </div>
+                <p class="project-card__desc">Smart queue sorting for Philippine public service offices</p>
+                <div class="project-card__meta">
+                  <span class="project-card__tag">React.js · Tailwind CSS</span>
+                  <span class="project-card__role">Frontend</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="urbannoise" tabindex="0" role="button" aria-label="Open UrbanNoise-AI details">
+              <div class="project-card__inner">
+                <div class="project-card__header">
+                  <span class="project-card__name">UrbanNoise-AI</span>
+                  <span class="project-card__arrow">↗</span>
+                </div>
+                <p class="project-card__desc">1D-DAE + CNN pipeline for urban sound denoising and classification</p>
+                <div class="project-card__meta">
+                  <span class="project-card__tag">Python · TensorFlow</span>
+                  <span class="project-card__role">Backend</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="alibi" tabindex="0" role="button" aria-label="Open The Alibi details">
+              <div class="project-card__inner">
+                <div class="project-card__header">
+                  <span class="project-card__name">The Alibi</span>
+                  <span class="project-card__arrow">↗</span>
+                </div>
+                <p class="project-card__desc">Procedural AI-driven murder mystery detective game</p>
+                <div class="project-card__meta">
+                  <span class="project-card__tag">Python · RenPy</span>
+                  <span class="project-card__role">Game Logic</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="pasuyo" tabindex="0" role="button" aria-label="Open PASUYO details">
+              <div class="project-card__inner">
+                <div class="project-card__header">
+                  <span class="project-card__name">PASUYO</span>
+                  <span class="project-card__arrow">↗</span>
+                </div>
+                <p class="project-card__desc">Peer-to-peer micro-gig mobile app for the PUP Manila community</p>
+                <div class="project-card__meta">
+                  <span class="project-card__tag">Flutter · Firebase</span>
+                  <span class="project-card__role">Full-Stack</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- CERTIFICATIONS (main) -->
+        <section class="section fade-in" id="certs">
+          <div class="section__head">
+            <span class="section__title">Certifications</span>
+          </div>
+          <div class="cert-grid" id="cert-grid">
+            <!-- Rendered by certs.js -->
+          </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="section fade-in" id="contact">
+          <div class="section__head">
+            <span class="section__title">Get In Touch</span>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" autocomplete="name" required />
+              <span class="form-error" id="err-name"></span>
+            </div>
+            <div class="form-row">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" autocomplete="email" required />
+              <span class="form-error" id="err-email"></span>
+            </div>
+            <div class="form-row">
+              <label for="fmsg">Message</label>
+              <textarea id="fmsg" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+              <span class="form-error" id="err-msg"></span>
+            </div>
+            <button type="submit" class="submit-btn" id="submit-btn">
+              <span class="submit-btn__text">Send Message</span>
+              <span class="submit-btn__icon">→</span>
+            </button>
+            <p class="form-success" id="form-success" aria-live="polite"></p>
+          </form>
+        </section>
+
+      </main>
+
+      <!-- ── RIGHT COLUMN / SIDEBAR ────────────────────────── -->
+      <aside class="main-right">
+
+        <!-- EDUCATION -->
+        <div class="sidebar-section">
+          <div class="section__head">
+            <span class="section__title">Education</span>
+          </div>
+          <ul class="timeline">
+            <li class="tl-item">
+              <div class="tl-dot tl-dot--active"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-title">BS Computer Science</span>
+                  <span class="tl-year">2023–Present</span>
+                </div>
+                <div class="tl-sub">Polytechnic University of the Philippines</div>
+              </div>
+            </li>
+            <li class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-title">Senior High — STEM</span>
+                  <span class="tl-year">2021–2023</span>
+                </div>
+                <div class="tl-sub">FEU Roosevelt Marikina</div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- CERT SUMMARY SIDEBAR -->
+        <div class="sidebar-section">
+          <div class="section__head">
+            <span class="section__title">Certifications</span>
+          </div>
+          <ul class="timeline" id="sidebar-certs">
+            <!-- Rendered by certs.js -->
+          </ul>
+        </div>
+
+        <!-- INTERESTS -->
+        <div class="sidebar-section">
+          <div class="section__head">
+            <span class="section__title">Interests</span>
+          </div>
+          <div class="pills">
+            <span class="pill">Full-Stack Dev</span>
+            <span class="pill">AI / ML</span>
+            <span class="pill">Software Engineering</span>
+            <span class="pill">Game Dev</span>
+            <span class="pill">Open Source</span>
+            <span class="pill">System Design</span>
+          </div>
+        </div>
+
+      </aside>
+
+    </div><!-- /main-grid -->
+
+    <footer class="footer">
+      <p>Chezter Lei Christian V. Reblando &nbsp;·&nbsp; Marikina City, Philippines &nbsp;·&nbsp; 2026</p>
+    </footer>
+  </div><!-- /page -->
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal" id="modal">
+      <button class="modal__close" id="modal-close" aria-label="Close">✕</button>
+      <div class="modal__content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS (order matters: data first) -->
+  <script src="js/data.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/stack.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/certs.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
