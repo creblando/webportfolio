@@ -1,8 +1,3 @@
-/* ── DATA ────────────────────────────────────────────────── *
- * Single source of truth for all portfolio content.
- * Edit this file to update projects, certifications, etc.
- * ─────────────────────────────────────────────────────────── */
-
 const DATA = {
 
   /* ── PROJECTS ─────────────────────────────────────────── */
@@ -45,7 +40,7 @@ const DATA = {
 
     urbannoise: {
       name: 'UrbanNoise-AI',
-      subject: 'Artificial Intelligence (COSC 304)',
+      subject: 'Artificial Intelligence',
       role: 'Backend Developer',
       tag: 'Python · TensorFlow · Keras · Flask',
       description:
@@ -63,7 +58,7 @@ const DATA = {
 
     alibi: {
       name: 'The Alibi',
-      subject: 'Artificial Intelligence / Game Development (COSC 304)',
+      subject: 'Artificial Intelligence / Game Development',
       role: 'Game Logic Developer',
       tag: 'Python · RenPy',
       description:
@@ -79,60 +74,7 @@ const DATA = {
       status: 'Completed',
     },
 
-    pasuyo: {
-      name: 'PASUYO',
-      subject: 'Software Engineering',
-      role: 'Full-Stack Developer',
-      tag: 'Flutter · Dart · Express.js · Firebase',
-      description:
-        'A hyper-local peer-to-peer micro-gig mobile application for the PUP Manila community. Enables students and community members to post and accept small tasks. Built with Flutter/Dart for the frontend, Express.js/TypeScript for the REST API backend, Firebase Firestore and Auth for data and authentication, and PayMongo for payments.',
-      highlights: [
-        'Flutter/Dart mobile frontend',
-        'Express.js + TypeScript REST API',
-        'Firebase Firestore + Auth',
-        'PayMongo payment integration',
-      ],
-      github: 'https://github.com/creblando',
-      live: null,
-      status: 'In Development',
-    },
   },
-
-  /* ── WORK EXPERIENCE ──────────────────────────────────── */
-  experience: [
-    {
-      role: 'AI Video Editor',
-      company: 'International Client',
-      period: 'Jun 2026 – Present',
-      location: 'Remote',
-      bullets: [
-        'Produce AI-assisted video content using prompt engineering and AI video automation tools',
-        'Manage end-to-end editing pipeline: generation, refinement, and client delivery',
-        'Coordinate across time zones with independent client management',
-      ],
-    },
-    {
-      role: 'Video Editor',
-      company: 'Local Marketing Company',
-      period: 'Jan 2026 – Present',
-      location: 'Philippines',
-      bullets: [
-        'Edit marketing and promotional content for a portfolio of local business clients',
-        'Collaborate with the creative team to meet brand guidelines and campaign deadlines',
-        'Deliver consistent, revision-ready cuts under time pressure',
-      ],
-    },
-    {
-      role: 'Freelance Video Editor',
-      company: 'International Client',
-      period: 'Nov 2024 – Present',
-      location: 'Remote',
-      bullets: [
-        'Provide ongoing video editing services on a flexible retainer basis',
-        'Maintain reliable quality and turnaround while managing a full-time academic workload',
-      ],
-    },
-  ],
 
   /* ── CERTIFICATIONS ───────────────────────────────────── */
   certifications: [
